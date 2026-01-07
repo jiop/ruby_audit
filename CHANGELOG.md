@@ -5,6 +5,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [3.1.0] - 2026-01-07
+
+### Added
+
+- Support for Ruby 3.4
+- Support for Ruby 4.0
+
 ## [3.0.0] - 2025-01-09
 
 ### Changed
@@ -120,7 +127,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 - Initial Release
 
-[Unreleased]: https://github.com/civisanalytics/ruby_audit/compare/v3.0.0...HEAD
+[Unreleased]: https://github.com/civisanalytics/ruby_audit/compare/v3.1.0...HEAD
+[3.1.0]: https://github.com/civisanalytics/ruby_audit/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/civisanalytics/ruby_audit/compare/v2.3.1...v3.0.0
 [2.3.1]: https://github.com/civisanalytics/ruby_audit/compare/v2.3.0...v2.3.1
 [2.3.0]: https://github.com/civisanalytics/ruby_audit/compare/v2.2.0...v2.3.0
