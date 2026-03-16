@@ -34,12 +34,12 @@ module RubyAudit
                   "#{RUBY_VERSION}.#{RUBY_PATCHLEVEL}"
                 end
       specs = [Version.new(RUBY_ENGINE, version)]
-      scan_inner(specs, 'ruby', options, &block)
+      scan_inner(specs, 'ruby', options, &)
     end
 
-    def scan_rubygems(options = {}, &block)
-      specs = [Version.new('rubygems', rubygems_version)]
-      scan_inner(specs, 'library', options, &block)
+    def scan_rubygems(options = {}, &)
+      specs = [Version.new('rubygems-update', rubygems_version)]
+      scan_inner(specs, 'rubygems', options, &)
     end
 
     private
@@ -63,7 +63,7 @@ module RubyAudit
       ignore += options[:ignore] if options[:ignore]
 
       specs.each do |spec|
-        @database.send("check_#{type}".to_sym, spec) do |advisory|
+        @database.send(:"check_#{type}", spec) do |advisory|
           unless ignore.intersect?(advisory.identifiers.to_set)
             yield Bundler::Audit::Results::UnpatchedGem.new(spec, advisory)
           end
