@@ -34,7 +34,7 @@ module RubyAudit
                   "#{RUBY_VERSION}.#{RUBY_PATCHLEVEL}"
                 end
       specs = [Version.new(RUBY_ENGINE, version)]
-      scan_inner(specs, 'ruby', options, &)
+      scan_inner(specs, 'ruby', options, &block)
     end
 
     def scan_rubygems(options = {}, &)
