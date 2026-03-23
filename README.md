@@ -1,7 +1,18 @@
-# RubyAudit
+# RubyAudit Fork
 
-![Build Status](https://github.com/civisanalytics/ruby_audit/actions/workflows/test.yml/badge.svg)
-[![Gem Version](https://badge.fury.io/rb/ruby_audit.svg)](http://badge.fury.io/rb/ruby_audit)
+[![Gem Version](https://badge.fury.io/rb/ruby-audit-fork.svg)](http://badge.fury.io/rb/ruby-audit-fork)
+
+> **⚠️ This is a fork of [ruby_audit](https://github.com/civisanalytics/ruby_audit) with JRuby compatibility fixes**
+>
+> The original gem is available at: https://rubygems.org/gems/ruby_audit
+>
+> This fork includes JRuby compatibility fixes that may not yet be merged upstream.
+> **All development, bug reports, and contributions should go to the original project:**
+> https://github.com/civisanalytics/ruby_audit
+>
+> This is NOT a maintained fork. It's published for users who need JRuby compatibility.
+
+## About
 
 RubyAudit checks your current version of Ruby and RubyGems against known security vulnerabilities (CVEs), alerting you if you are using an insecure version.
 It complements [bundler-audit](https://github.com/rubysec/bundler-audit), providing complete coverage for your Ruby stack.
@@ -16,7 +27,7 @@ RubyAudit is based on and leverages bundler-audit, and would not exist without t
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ruby_audit'
+gem 'ruby-audit-fork'
 ```
 
 And then execute:
@@ -25,7 +36,17 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install ruby_audit
+    $ gem install ruby-audit-fork
+
+### Why use this fork?
+
+Use this fork if you need JRuby compatibility. The original `ruby_audit` gem is available
+at https://rubygems.org/gems/ruby_audit - use that unless you specifically need the JRuby fixes.
+
+This fork includes:
+- JRuby compatibility fix (use JRUBY_VERSION when checking jruby engine)
+
+The executable and API are identical to the original.
 
 Because bundler-audit requires bundler, RubyAudit requires bundler as a transitive
 dependency.  If you don't intend to run RubyAudit in the production environment, you
@@ -68,7 +89,10 @@ To release a new version, update the version number in `version.rb`, and then ru
 
 ## Contributing
 
-See [CONTRIBUTING](CONTRIBUTING.md).
+**Please contribute to the original project:** https://github.com/civisanalytics/ruby_audit
+
+This fork is not actively maintained. All bug reports, feature requests, and pull requests
+should be directed to the upstream repository.
 
 ## License
 

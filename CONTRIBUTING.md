@@ -18,11 +18,11 @@ This project is intended to be a safe, welcoming space for collaboration, and co
 
 ## Tips
 
-- All pull requests must include test coverage. If you’re not sure how to test
+- All pull requests must include test coverage. If you're not sure how to test
   your changes, feel free to ask for help.
 - Contributions must conform to the
   [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
-- Don’t forget to add your change to the [CHANGELOG](CHANGELOG.md). See
+- Don't forget to add your change to the [CHANGELOG](CHANGELOG.md). See
   [Keep a CHANGELOG](http://keepachangelog.com/) for guidelines.
 
 Thank you for taking the time to contribute to RubyAudit!
